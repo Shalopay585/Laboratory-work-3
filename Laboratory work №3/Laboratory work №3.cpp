@@ -108,20 +108,20 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    Human human1("Іваненко Анна Русланівна", 2005, "жінка");
-    Human gigachad("Саламатін Костянтин Сергійович", 2004, "чоловік");
-    Student student1(Human("Глєбов Максим Максимович", 2005, "чоловік"), 2022, "7-121-2022/9");
+    Human anna("Іваненко Анна Русланівна", 2005, "жінка");
+    Human kostya("Саламатін Костянтин Сергійович", 2004, "чоловік");
+    Student maxim(Human("Глєбов Максим Максимович", 2005, "чоловік"), 2022, "7-121-2022/9");
 
-    student1.add_subject("ООП");
-    student1.add_subject("Математичний аналіз");
-    student1.add_subject("АКтаНРП");
-    student1.add_subject("Дискретна математика");
-    student1.add_subject("Філософія");
-    student1.calculate_average_score();
+    maxim.add_subject("ООП");
+    maxim.add_subject("Математичний аналіз");
+    maxim.add_subject("АКтаНРП");
+    maxim.add_subject("Дискретна математика");
+    maxim.add_subject("Філософія");
+    maxim.calculate_average_score();
     
-    human1.printInfo();
-    gigachad.printInfo();
-    student1.printInfo();
+    anna.printInfo();
+    kostya.printInfo();
+    maxim.printInfo();
 
     cout << endl;
     return 0;
