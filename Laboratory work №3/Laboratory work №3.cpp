@@ -11,9 +11,18 @@ protected:
 public:
     Human(string n, int by, string s) : name(n), birth_year(by), sex(s) {}
 
-    void setName(string n) { name = n; }
-    void setBirthYear(int by) { birth_year = by; }
-    void setSex(string s) { sex = s; }
+    void setName(string n) 
+    { 
+        name = n; 
+    }
+    void setBirthYear(int by) 
+    { 
+        birth_year = by; 
+    }
+    void setSex(string s) 
+    { 
+        sex = s; 
+    }
     void printInfo()
     {
         cout << "\n\nМене звати " << name << ", я " << sex << ". Мій рік народження це " << birth_year << "-й.";
@@ -36,7 +45,10 @@ public:
         average_score = 0;
     }
 
-    ~Student() { delete[] subjects; }
+    ~Student() 
+    { 
+        delete[] subjects; 
+    }
 
     void add_subject(string sbj)
     {
